@@ -92,7 +92,7 @@ firebase-ui-storage
 |--- com.google.firebase:firebase-storage
 ```
 
-Each version of FirebaseUI has dependency on a fixed version of these libraries, defined as the variable `firebase_version`
+Each version of FirebaseUI has a dependency on a fixed version of these libraries, defined as the variable `firebase_version`
 in `common/constants.gradle`. If you are using any dependencies in your app of the form
 `implementation 'com.google.firebase:firebase-*:x.y.z'` or
 `implementation 'com.google.android.gms:play-services-*:x.y.z'`
@@ -121,9 +121,9 @@ For convenience, here are some recent examples:
 ### Upgrading dependencies
 
 If you would like to use a newer version of one of FirebaseUI's transitive dependencies, such
-as Firebase, Play services, or the Android support libraries, you need to add explicit
+as Firebase, Play services, or the Android support libraries, you need to add explicitly
 `implementation` declarations in your `build.gradle` for all of FirebaseUI's dependencies at the version
-you want to use. For example if you want to use Play services/Firebase version `FOO` and support
+you want to use. For example, if you want to use Play services/Firebase version `FOO` and support
 libraries version `BAR` add the following extra lines for each FirebaseUI module you're using:
 
 #### Auth
@@ -192,7 +192,7 @@ the Firebase console. Add an Android app to the project, and copy
 the generated google-services.json file into the `app/` directory.
 Also enable [anonymous authentication](https://firebase.google.com/docs/auth/android/anonymous-auth)
 for the Firebase project, since some components of the sample app
-requires it.
+require it.
 
 If you encounter a version incompatibility error between Android Studio
 and Gradle while trying to run the sample app, try disabling the Instant
